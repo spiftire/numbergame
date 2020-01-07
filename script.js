@@ -28,7 +28,7 @@ for (let i = 0; i < cards.length; i++) {
   const div = createVisualCard(cardNumbers);
     const id = i + 1;
   div.setAttribute("id", "card"+id);
-  div.style.order = Math.floor(Math.random() * 10);
+  div.style.order = Math.floor(Math.random() * bitStringLength);
   div.onclick = function(){ toggleBackgroundColor("card"+id)};
 
   body.appendChild(div);
