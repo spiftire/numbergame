@@ -27,7 +27,7 @@ for (let i = 0; i < cards.length; i++) {
   // cards.forEach(cardNumbers => {
   const div = createVisualCard(cardNumbers);
     const id = i + 1;
-  div.setAttribute("id", id);
+  div.setAttribute("id", "card"+id);
   div.onclick = function(){ toggleBackgroundColor(id)};
 
   body.appendChild(div);
