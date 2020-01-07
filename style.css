@@ -33,19 +33,3 @@ p {
 .toggled {
     background-color: chartreuse;
 }
-
-#card2 {
-    order: 5;
-}
-
-#card3 {
-    order: 2;
-}
-
-#card5{
-    order: -2;
-}
-
-#card7{
-    order:3;
-}
