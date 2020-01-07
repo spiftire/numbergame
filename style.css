@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+div {
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+    justify-items: center;
+    column-gap: .5rem;
+    row-gap: .25rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: 2rem;
+    width: auto;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 2em;
+}
+
+.toggled {
+    background-color: chartreuse;
+}
+
+#card2 {
+    order: 5;
+}
+
+#card3 {
+    order: 2;
+}
+
+#card5{
+    order: -2;
+}
+
+#card7{
+    order:3;
+}
