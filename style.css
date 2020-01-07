@@ -3,14 +3,18 @@
 }
 
 body{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    margin: 0;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* grid-auto-columns: minmax(10rem, auto) ; */
+    /* grid-template-columns: repeat(auto-fit,minmax(10rem, 1fr)); */
     gap: 1rem;
     justify-content: space-evenly;
 }
 
 div {
-    margin: 2rem auto;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     align-items: center;
