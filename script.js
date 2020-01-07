@@ -13,14 +13,13 @@ numbers.forEach(number => {
     bitstrings.push(paddedString);
 });
 
-let firstCard = bitStringsToNumbers(getBitTrue(bitstrings, 6));
-let secondCard = bitStringsToNumbers(getBitTrue(bitstrings, 5));
-let thirdCard = bitStringsToNumbers(getBitTrue(bitstrings, 4));
-let fourthCard = bitStringsToNumbers(getBitTrue(bitstrings, 3));
-let fifthCard = bitStringsToNumbers(getBitTrue(bitstrings, 2));
-let sixthCard = bitStringsToNumbers(getBitTrue(bitstrings, 1));
-let seventhCard = bitStringsToNumbers(getBitTrue(bitstrings, 0));
-
+let cards = [];
+for (let i = 6; i >= 0; i--) {
+    console.log(i);
+    
+    cards.push(bitStringsToNumbers(getBitTrue(bitstrings, i))); 
+}
+console.log(cards);
 
 
 function getBitTrue(arrayOfBitstrings, placment) {
