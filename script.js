@@ -12,7 +12,6 @@ numbers.forEach(number => {
     let paddedString = pad(number.toString(2), 7);
     bitstrings.push(paddedString);
 });
-console.log(bitstrings);
 
 let firstCard = bitStringsToNumbers(getBitTrue(bitstrings, 6));
 let secondCard = bitStringsToNumbers(getBitTrue(bitstrings, 5));
@@ -40,7 +39,7 @@ function bitStringsToNumbers(arrayOfBitstrings) {
     arrayOfBitstrings.forEach(bitString => {
         numbers.push(parseInt(bitString,2));
     });
-    console.log(numbers);
+    return numbers;
 }
 
 function pad(s, size) {    
