@@ -15,6 +15,7 @@ body{
 }
 
 div {
+    margin-bottom: 1rem;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     align-items: center;
@@ -36,4 +37,11 @@ p {
 
 .toggled {
     background-color: chartreuse;
+}
+
+@media (max-width: 500px) {
+    div{
+        grid-template-columns: repeat(7, 1fr);
+        padding: 1.5rem;
+    }
 }
